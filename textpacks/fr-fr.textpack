@@ -6,3 +6,4 @@ oui_player_spotify_prefs => Afficher les préférences du lecteur Spotify
 oui_player_spotify_width => Largeur du lecteur
 oui_player_spotify_height => Hauteur du lecteur
 oui_player_spotify_ratio => Ratio utilisé en l'absence de l'une des dimensions
+oui_player_spotify_responsive => Rendre les lecteurs adaptatifs à partir des dimensions fournies

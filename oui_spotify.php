@@ -38,11 +38,14 @@ if (class_exists('Oui\Provider')) {
         protected static $srcBase = '//open.spotify.com/embed/';
         protected static $srcGlue = array('', '/', '/');
         protected static $iniDims = array(
-            'width'  => '300',
-            'height' => '380',
-            'ratio'  => '',
+            'width'      => '300',
+            'height'     => '380',
+            'ratio'      => '',
+            'responsive' => array(
+                'default' => 'false',
+                'valid'   => array('true', 'false'),
+            ),
         );
-
         protected static $mediaPatterns = array(
             'album' => array(
                 'scheme' => '#^https?://(open|play)\.spotify\.com/album/(.+)$#i',
