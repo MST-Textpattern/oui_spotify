@@ -33,8 +33,11 @@ namespace Oui;
 
 if (class_exists('Oui\Player\Provider')) {
 
-    class Spotify extends Player\Provider
+    class Spotify extends Player\Oembed
     {
+        protected static $endPoint = 'https://embed.spotify.com/oembed/?url=';
+        protected static $URLBase = 'https://open.spotify.com/';
+
         protected static $srcBase = '//open.spotify.com/embed/';
         protected static $srcGlue = array('', '/', '/');
         protected static $iniDims = array(
